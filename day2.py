@@ -1,6 +1,10 @@
 def checksum(rows):
+	# Create generator. Inside of generator, create a list to iterate below.
+	# generator is lighter than list
 	rows = ([int(r) for r in row.strip().split()] for row in rows)
+	# "if row" treats the case where empty line.
 	diff = (max(row) - min(row) for row in rows if row)
+	# generator can be stored somewhere. So it can be added with sum().
 	return sum(diff)
 
 
