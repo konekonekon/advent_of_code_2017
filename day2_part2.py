@@ -1,6 +1,13 @@
 def check_row(row):
-	# pour chaque ligne, trouver le produit cartesian
-	pass
+	# pour chaque ligne, trouver le produit cartesian ??
+
+	for r in row:
+		for i in range(len(row)):
+			if row[i] != r:
+				if row[i] % r == 0:
+					diviser = row[i] // r
+	
+	return diviser
 
 
 def checksum(rows):
