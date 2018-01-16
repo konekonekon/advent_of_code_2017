@@ -15,6 +15,6 @@ def day2(path):
 	result = checksum(content)
 	print(result)
 
-
+# using main, the program doesn't launch.
 if __name__ == '__main__':
 	day2('./day2_input1.d')
